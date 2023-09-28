@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Student Suvey Form</title>
+<style>
+body 
+{
+background-color:Teal;
+font-family:"times new roman;
+text-align:center;
+}
+form {
+background-color:White;
+max-width:500px;
+margin:50px auto;
+padding:30px 20px;
+}
+.form-control {
+text-align:left;
+margin-bottom:25px;
+}
+.form-control label {
+display:block;
+margin-bottom:10px;
+}
+.form-control input,.form-control select,.form-control textarea {
+border:1px solid;
+border-radius: 2px;
+padding:10px;
+display:block;
+width: 95%;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+display:inline-block;
+width: auto;
+}
+button {
+background-color:Teal;
+border:1px solid;
+border-radius:2px;
+font-size:21px;
+display:block;
+width:95%;
+margin-top:50px;
+margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+<h1 align="center">Student Survey Form</h1>
+<form>
+<div class="form-control">
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your name"/>
+</div>
+<div class="form-control">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter your email"/>
+</div>
+<div class="form-control">
+<label for="age" id="label-age">Age</label>
+<input type="text" id="age" placeholder="Enter your age"/>
+</div>
+<div class="form-control">
+<label>Which option best describes you?</label>
+<select>
+<option>Student</option>
+<option>Intern</option>
+<option>Professional</option>
+<option>Other</option>
+</select>
+</div>
+<div class="form-control">
+<label>Would you recommend Computer Science to a friend?</label>
+<input type="radio">Yes</input><br>
+<input type="radio">No</input><br>
+<input type="radio">Maybe</input><br>
+</div>
+<div class="form-control">
+<label>Languages and Frameworks known(Check all that apply)</label>
+<input type="checkbox">C</input></label><br>
+<input type="checkbox">C++</input></label><br>
+<input type="checkbox">C#</input></label><br>
+<input type="checkbox">Java</input></label><br>
+<input type="checkbox">Python</input></label><br>
+<input type="checkbox">Javascript</input></label><br>
+<input type="checkbox">React</input></label><br>
+<input type="checkbox">Angular</input></label><br>
+</div>
+<div class="form-control">
+<label>Any comments or suggestions</label>
+<textarea name="comment" id="comment"></textarea>
+</div>
+<button type="submit" value="submit">Submit</button>
+</form>
+</body>
+</html>

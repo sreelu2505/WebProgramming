@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Tour booking form</title>
+<style>
+body 
+{
+background-color:Grey;
+font-family:"times new roman;
+text-align:center;
+}
+form {
+background-color:White;
+max-width:1000px;
+margin:50px auto;
+padding:10px 20px;
+}
+.form-control {
+text-align:left;
+margin-bottom:25px;
+}
+.form-control label {
+display:block;
+margin-bottom:10px;
+}
+.form-control input,.form-control select,.form-control textarea {
+border:1px solid;
+border-radius: 2px;
+padding:8px;
+display:block;
+width:95%;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+display:inline-block;
+width: auto;
+}
+button {
+background-color:grey;
+border:1px solid;
+border-radius:2px;
+font-size:21px;
+display:block;
+width:15%;
+margin-top:50px;
+margin-bottom:20px;
+}
+.centered{
+position:absolute;
+top:50%;
+left:40%;
+}
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:30px;
+}
+</style>
+</head>
+<body>
+<form>
+<div class="container">
+<img src="C:\xampp\htdocs\0f733e397bee12f5c948e61db7baab05.jpg" width="900" height="200">
+<div class="centered">Tour Booking Form</div>
+</div><br>
+<div class="form-control">
+<label>Name*</label>
+<input type="text" id="name" placeholder="First"/><br><input type="text" id="name" placeholder="Last"/>
+</div>
+<div class="form-control">
+<label>Email*</label>
+<input type="email" id="email" placeholder="Enter your email"/>
+</div>
+<div class="form-control">
+<label>Phone*</label>
+<input type="number" id="phone" placeholder="Enter your phone number"/>
+</div>
+<div class="form-control">
+<label>When are you planning to visit?*</label>
+<input type="date" id="calender" placeholder="dd-mm-yy">
+</div>
+<div class="form-control">
+<label>How many people are there in your group?*</label>
+<input type="number" id="people">
+</div>
+<div class="form-control">
+<label>Which tours or events are you most interested in?</label>
+<input type="number" id="tours">
+</div>
+<div class="form-control">
+<label>What is the best way to contact you?*</label>
+<input type="checkbox">Phone</input></label><br>
+<input type="checkbox">Email</input></label><br>
+<input type="checkbox">Either</input></label><br><br>
+<div class="form-control">
+<label>If phone,when is the best time of day for a call back?*</label>
+<input type="radio">8-11 AM</input><br>
+<input type="radio">12-4 PM</input><br>
+<input type="radio">6-10 PM</input><br>
+</div>
+<div class="form-control">
+<label>Anything else we should know</label>
+<textarea name="comment" id="comment"></textarea>
+</div>
+<div class="form-control">
+<label>And last, how did you hear about us?</label>
+<textarea name="comment" id="comment"></textarea>
+</div>
+<center><button type="send" value="send">Send</button></center>
+</form>
+</body>
+</html>
